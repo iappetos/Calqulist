@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  Calculus
+//  Calculist
 //
-//  Created by planB on 25/1/19.
-//  Copyright © 2019 Ioannis. All rights reserved.
+//  Created by Ioannis Karagogos on 25/1/19.
+//  Copyright © 2019 Ioannis Karagogos. All rights reserved.
 //
 
 import UIKit
@@ -17,6 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        /*
+        NotificationCenter.default.addObserver(self, selector: #selector(onUbiquitousKeyValueStoreDidChangeExternally), name: NSUbiquitousKeyValueStore.didChangeExternallyNotification, object: NSUbiquitousKeyValueStore.default)
+        
+        NSUbiquitousKeyValueStore.default.synchronize()
+        */
+        
         return true
     }
 
